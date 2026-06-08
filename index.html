@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Happy Birthday My Love</title>
+    <meta name="description" content="A private birthday surprise for Umarul Farzan NS.">
+    <meta property="og:title" content="Happy Birthday My Love">
+    <meta property="og:description" content="A cinematic birthday surprise made with love for Umarul Farzan NS.">
+    <meta property="og:image" content="watercolor-couple.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preload" href="watercolor-couple.png" as="image">
+    <link rel="preload" href="birthday-balloons.gif" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <audio id="bgMusic" preload="metadata" loop>
+      <source src="birthday-video.mp4" type="video/mp4">
+    </audio>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle background music">
+      <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+
+    <main id="top">
+      <section class="hero reveal-panel" id="cover" aria-label="Opening birthday cover">
+        <img class="hero-gif" src="birthday-balloons.gif" alt="Birthday balloons">
+        <div class="hero-overlay"></div>
+        <div class="gold-dust" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">31.07.2005</p>
+          <h1>Happy Birthday My Love</h1>
+          <p class="hero-name">umarul farzan ns</p>
+          <button class="open-button shine" id="openSurprise" type="button">
+            Tap to open
+          </button>
+        </div>
+        <a class="scroll-cue" href="#letter" aria-label="Scroll to the love letter">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="letter-section section-pad reveal-panel" id="letter">
+        <div class="section-kicker">a letter for you</div>
+        <img class="letter-photo" src="watercolor-couple.png" alt="Watercolor portrait of the couple" loading="lazy">
+        <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="loveLetter">
+          <span class="env-back"></span>
+          <span class="env-paper">
+            <span>Touch to read</span>
+          </span>
+          <span class="env-left"></span>
+          <span class="env-right"></span>
+          <span class="env-flap"></span>
+        </button>
+        <article class="love-letter" id="loveLetter">
+          <p>From the day you came into my life, you've brought happiness, comfort, and so many beautiful memories. Your smile can brighten even my hardest days, and your kindness reminds me how lucky I am to have you by my side.</p>
+          <p>I love the way you make me laugh, the way you support me when things get difficult, and the way you always seem to understand me. Being with you feels safe, exciting, and special all at the same time.</p>
+          <p>Thank you for being patient with me, for believing in me, and for showing me what genuine care looks like. Every conversation, every shared joke, and every moment we spend together becomes a memory I treasure.</p>
+          <p>No matter what challenges come our way, I hope we continue to grow together, support each other, and create even more wonderful memories. You are an important part of my life, and I am grateful for you every single day.</p>
+          <p>I love you more than words can fully express, and I look forward to all the moments we still have ahead of us.</p>
+        </article>
+      </section>
+
+      <section class="name-section section-pad reveal-panel" aria-label="Name section">
+        <img src="portrait-smile.jpg" alt="Umarul smiling" loading="lazy">
+        <div class="name-card">
+          <p>birthday boy</p>
+          <h2>umarul farzan ns</h2>
+          <span>my boyfriend, my comfort, my favorite person</span>
+        </div>
+      </section>
+
+      <section class="scratch-section section-pad reveal-panel" id="birthdayDate">
+        <div class="section-kicker">scratch to reveal</div>
+        <div class="scratch-card" id="scratchCard">
+          <div class="date-reveal">
+            <span>his birthday date</span>
+            <strong>31-07-2005</strong>
+          </div>
+          <canvas id="scratchCanvas" aria-label="Scratch to reveal the birthday date"></canvas>
+        </div>
+        <p class="mini-note">Use your finger to reveal the date.</p>
+      </section>
+
+      <section class="gallery-section section-pad reveal-panel" id="gallery">
+        <div class="section-kicker">our little gallery</div>
+        <div class="swipe-gallery" aria-label="Swipe couple photos">
+          <figure>
+            <img src="classroom-couple.jpg" alt="Couple moment in class" loading="lazy">
+          </figure>
+          <figure>
+            <img src="waterfall-couple.jpg" alt="Couple selfie near water" loading="lazy">
+          </figure>
+        </div>
+        <h2 class="times-title">my love, happy birthday</h2>
+      </section>
+
+      <section class="video-section reveal-panel" aria-label="Birthday video">
+        <video src="birthday-video.mp4" controls autoplay muted loop playsinline preload="metadata" poster="watercolor-couple.png"></video>
+      </section>
+
+      <section class="final-section section-pad reveal-panel" id="final">
+        <img src="soft-couple.jpg" alt="Soft couple selfie" loading="lazy">
+        <div class="final-copy">
+          <p>09-03-2026</p>
+          <h2>Happy birthday to my special one</h2>
+        </div>
+      </section>
+    </main>
+
+    <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
